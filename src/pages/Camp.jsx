@@ -97,10 +97,10 @@ export default function Camp() {
                   公众号每篇文章就是当周预告。
                 </p>
                 <p className="text-[13px] text-[#6e6e73] mb-6">
-                  关注公众号「AI创新增长杨教练」看每周拆什么 · 加微信 ikoning365 备注「拆AI营」占座
+                  关注公众号「余雨life」看每周拆什么 · 公众号留言「拆AI营」占座
                 </p>
-                <button type="button" onClick={() => { try { navigator.clipboard?.writeText('ikoning365') } catch (e) {} }}
-                  className="btn-primary" title="点击复制微信号">复制微信号 ikoning365 📋</button>
+                <button type="button" onClick={() => { try { navigator.clipboard?.writeText('余雨life') } catch (e) {} }}
+                  className="btn-primary" title="点击复制公众号名">复制公众号名 余雨life 📋</button>
               </div>
               <p className="text-[12px] text-[#6e6e73] mt-6">
                 原型跑通想深做？<a href="https://www.aibay.asia/#partner" className="text-[#2997ff] hover:underline">Loong FDE 实现路径 ↗</a>

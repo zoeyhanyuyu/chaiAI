@@ -136,11 +136,11 @@ export default function SkillFusion() {
               <div className="flex flex-wrap items-center gap-3">
                 <button
                   type="button"
-                  onClick={() => { try { navigator.clipboard?.writeText('ikoning365') } catch (e) {} }}
+                  onClick={() => { try { navigator.clipboard?.writeText('余雨life') } catch (e) {} }}
                   className="px-5 py-2.5 rounded-xl bg-[#0071e3] text-white text-sm font-semibold hover:bg-[#0077ed] transition-all"
                   title="点击复制微信号"
                 >
-                  定档早知道 · 微信 ikoning365 📋
+                  定档早知道 · 公众号 余雨life 📋
                 </button>
                 <span className="text-xs text-[#86868b]">时间地点定档后，报名帖发拆书帮公众号 · 12 人小班</span>
               </div>
@@ -206,11 +206,11 @@ export default function SkillFusion() {
               <div className="flex flex-wrap items-center gap-3">
                 <button
                   type="button"
-                  onClick={() => { try { navigator.clipboard?.writeText('ikoning365') } catch (e) {} }}
+                  onClick={() => { try { navigator.clipboard?.writeText('余雨life') } catch (e) {} }}
                   className="px-5 py-2.5 rounded-xl bg-[#0071e3] text-white text-sm font-semibold hover:bg-[#0077ed] transition-all"
                   title="点击复制微信号"
                 >
-                  定档早知道 · 微信 ikoning365 📋
+                  定档早知道 · 公众号 余雨life 📋
                 </button>
                 <span className="text-xs text-[#86868b]">时间地点定档后，报名帖发拆书帮公众号 · 12 人小班</span>
               </div>
@@ -276,11 +276,11 @@ export default function SkillFusion() {
               <div className="flex flex-wrap items-center gap-3">
                 <button
                   type="button"
-                  onClick={() => { try { navigator.clipboard?.writeText('ikoning365') } catch (e) {} }}
+                  onClick={() => { try { navigator.clipboard?.writeText('余雨life') } catch (e) {} }}
                   className="px-5 py-2.5 rounded-xl bg-[#0071e3] text-white text-sm font-semibold hover:bg-[#0077ed] transition-all"
                   title="点击复制微信号"
                 >
-                  定档早知道 · 微信 ikoning365 📋
+                  定档早知道 · 公众号 余雨life 📋
                 </button>
                 <span className="text-xs text-[#86868b]">只做方法拆解与自动复盘，不荐股不预测行情 · 12 人小班</span>
               </div>

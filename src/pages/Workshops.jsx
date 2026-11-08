@@ -84,11 +84,11 @@ function NeedsForm() {
         setForm({ software: '', scene: '', expect: '', contact: '', website: '' })
       } else {
         setState('error')
-        setMsg(d.error || '提交失败，请稍后再试，或直接加微信 ikoning365')
+        setMsg(d.error || '提交失败，请稍后再试，或到公众号「余雨life」留言')
       }
     } catch {
       setState('error')
-      setMsg('网络异常，提交失败——加微信 ikoning365 一样能提需求')
+      setMsg('网络异常，提交失败——到公众号「余雨life」留言一样能提需求')
     }
   }
 
@@ -124,7 +124,7 @@ function NeedsForm() {
       {state === 'error' && (
         <div className="mt-4 rounded-xl bg-[#ff2d55]/10 text-[#d1334e] text-[13.5px] px-4 py-3">
           {msg}
-          <button type="button" onClick={() => { try { navigator.clipboard?.writeText('ikoning365') } catch (e) {} }} className="ml-2 underline font-semibold">复制微信 ikoning365</button>
+          <button type="button" onClick={() => { try { navigator.clipboard?.writeText('余雨life') } catch (e) {} }} className="ml-2 underline font-semibold">复制公众号 余雨life</button>
         </div>
       )}
     </form>
@@ -216,7 +216,7 @@ export default function Workshops() {
                 <>
                   {w.link && <a href={w.link} className="btn-primary">材料回看 · 课件与学员材料 →</a>}
                   {w.guide && <a href={w.guide} className="btn-secondary">自助跟做手册 · 零基础也能一步步做出成果 →</a>}
-                  <button type="button" onClick={() => { try { navigator.clipboard?.writeText('ikoning365') } catch (e) {} }} className="btn-secondary" title="点击复制微信号">想听下一场：微信 ikoning365 📋</button>
+                  <button type="button" onClick={() => { try { navigator.clipboard?.writeText('余雨life') } catch (e) {} }} className="btn-secondary" title="点击复制公众号名">想听下一场：公众号 余雨life 📋</button>
                 </>
               ) : s === 'live' ? (
                 <>
@@ -226,7 +226,7 @@ export default function Workshops() {
               ) : w.signupUrl ? (
                 <a href={w.signupUrl} target="_blank" rel="noreferrer" className="btn-primary">立即报名（拆书帮公众号）→</a>
               ) : (
-                <button type="button" onClick={() => { try { navigator.clipboard?.writeText('ikoning365') } catch (e) {} }} className="btn-primary" title="点击复制微信号">立即报名（微信 ikoning365）→</button>
+                <button type="button" onClick={() => { try { navigator.clipboard?.writeText('余雨life') } catch (e) {} }} className="btn-primary" title="点击复制公众号名">立即报名（公众号 余雨life）→</button>
               )}
               {s !== 'done' && w.link && <a href={w.link} className="btn-secondary">看本场完整介绍 →</a>}
             </div>
@@ -351,14 +351,14 @@ export default function Workshops() {
           ))}
           <div className="mt-6 mb-4 text-center">
             <p className="text-[14px] text-[#6e6e73] mb-5">
-              投完票想聊聊？加微信 ikoning365，备注「工作坊」——也帮你想拆的软件出出主意。
+              投完票想聊聊？到公众号「余雨life」留言，备注「工作坊」——也帮你想拆的软件出出主意。
             </p>
             {nx ? (
               <a href={nx.signupUrl || nx.link} target={nx.signupUrl ? '_blank' : undefined} rel="noreferrer" className="btn-primary">报名 {shortDate(nx)} 场（{nx.title.split(' · ')[0]}）→</a>
             ) : (
               <a href={done.length ? done[done.length - 1].link : '/workshops'} className="btn-primary">看已交付课程材料 →</a>
             )}
-            <button type="button" onClick={() => { try { navigator.clipboard?.writeText('ikoning365') } catch (e) {} }} className="btn-secondary" title="点击复制微信号">后续场次报名：微信 ikoning365 📋</button>
+            <button type="button" onClick={() => { try { navigator.clipboard?.writeText('余雨life') } catch (e) {} }} className="btn-secondary" title="点击复制公众号名">后续场次报名：公众号 余雨life 📋</button>
             <div className="mt-5">
               <a href={`${import.meta.env.BASE_URL}camp`} className="text-[14px] text-[#2997ff] hover:underline">线上也能玩：拆AI营 · 工作流/工作台/量化三版块，每周三晚开拆 →</a>
             </div>

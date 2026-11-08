@@ -88,7 +88,6 @@ const PROJECTS = [
   },
 ]
 
-const OWNER_MAIL = '554176937@qq.com'
 
 const fadeUp = {
   initial: { opacity: 0, y: 24 },
@@ -179,7 +178,7 @@ export default function Coai() {
             </p>
             <div className="flex items-center justify-center gap-3 flex-wrap mt-6">
               <a href={`${import.meta.env.BASE_URL}chaibuddy`} className="px-5 py-2.5 rounded-xl text-sm font-bold bg-[#1d1d1f] text-white hover:bg-[#3a3a3c] transition-colors">去拆搭子找自己 →</a>
-              <a href={`mailto:${OWNER_MAIL}`} className="px-5 py-2.5 rounded-xl text-sm font-bold glass border border-white/15 text-[#1d1d1f] hover:border-white/30 transition-colors">邮件站长</a>
+              <a href={`${import.meta.env.BASE_URL}about`} className="px-5 py-2.5 rounded-xl text-sm font-bold glass border border-white/15 text-[#1d1d1f] hover:border-white/30 transition-colors">联系站长</a>
             </div>
           </div>
         </motion.div>

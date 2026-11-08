@@ -71,8 +71,7 @@ const DEFAULT_MODE = {
 const ALL_MODES = { ...MODES, start: DEFAULT_MODE }
 
 const CONTACT_URL = 'https://www.chaishubang.com/'
-const OWNER_MAIL = '554176937@qq.com'
-const OWNER_WX = 'ikoning365'
+const OWNER_GZH = '余雨life'
 const NEEDS_API = 'https://api.aibay.asia/needs/needs'
 
 // ===== 牵线弹窗表单 =====
@@ -96,7 +95,7 @@ function BrokerModal({ p, onClose }) {
   }, [onClose, state])
 
   const modeNames = picked.map(id => (ALL_MODES[id] ? ALL_MODES[id].full : '另有想法'))
-  const mailtoHref = `mailto:${OWNER_MAIL}?subject=${encodeURIComponent(`拆搭子合作牵线 · ${form.name.trim() || '（未署名）'}`)}&body=${encodeURIComponent(`杨辉你好，我是${form.name.trim()}${form.rudder.trim() ? `（${form.rudder.trim()}）` : ''}。\n\n想聊的合作模式：${modeNames.length ? modeNames.join('；') : '待定'}\n\n我的想法：${form.note.trim() || '（见面聊）'}\n\n我的联系方式：${form.contact.trim() || '（邮件回复即可）'}`)}`
+  const mailtoHref = `${import.meta.env.BASE_URL}about`
 
   const submit = async e => {
     e.preventDefault()
@@ -188,7 +187,7 @@ function BrokerModal({ p, onClose }) {
             {state === 'error' && (
               <div className="mb-4 rounded-xl bg-rose-500/10 border border-rose-500/25 px-4 py-3 text-xs text-rose-600">
                 {msg}
-                <a href={mailtoHref} className="underline underline-offset-2 ml-1 font-bold">改用邮件发送 →</a>
+                <a href={mailtoHref} className="underline underline-offset-2 ml-1 font-bold">去关于页联系站长 →</a>
               </div>
             )}
 
@@ -196,9 +195,9 @@ function BrokerModal({ p, onClose }) {
               <button type="submit" disabled={state === 'sending'} className="flex-1 px-5 py-3 rounded-xl text-sm font-bold bg-[#1d1d1f] text-white hover:bg-[#3a3a3c] transition-colors disabled:opacity-50">
                 {state === 'sending' ? '发送中…' : '发送牵线卡 ✉️'}
               </button>
-              <a href={mailtoHref} className="px-4 py-3 rounded-xl text-xs font-medium text-[#6e6e73] hover:text-[#1d1d1f] underline underline-offset-2 whitespace-nowrap">改用邮件</a>
+              <a href={mailtoHref} className="px-4 py-3 rounded-xl text-xs font-medium text-[#6e6e73] hover:text-[#1d1d1f] underline underline-offset-2 whitespace-nowrap">关于页联系站长</a>
             </div>
-            <p className="text-[10px] text-[#86868b] mt-3 text-center">直接发到站长邮箱 {OWNER_MAIL} · 不自动群发、不留存名录</p>
+            <p className="text-[10px] text-[#86868b] mt-3 text-center">提交后由站长人工处理 · 不自动群发、不留存名录</p>
           </form>
         )}
       </div>
@@ -809,7 +808,7 @@ export default function Chaibuddy() {
                 🤝 填一张合作意向卡
               </button>
               <span className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-xs font-bold glass border border-amber-500/30 text-amber-600">
-                微信 {OWNER_WX}
+                公众号 {OWNER_GZH}
               </span>
             </div>
           </div>
