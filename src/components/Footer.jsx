@@ -18,7 +18,7 @@ export default function Footer() {
             <ul className="space-y-2 text-[13px] text-[#6e6e73]">
               <li><Link to="/workshops" className="hover:text-[#0071e3] transition-colors">工作坊全系列</Link></li>
               <li><Link to="/learning-path" className="hover:text-[#0071e3] transition-colors">拆成长</Link></li>
-              <li><a href={nx ? nx.link : '/workshops'} className="hover:text-[#0071e3] transition-colors">{nx ? '报名下一场' : '课程材料回看'}</a></li>
+              <li><a href={nx ? nx.link : `${import.meta.env.BASE_URL}workshops`} className="hover:text-[#0071e3] transition-colors">{nx ? '报名下一场' : '课程材料回看'}</a></li>
             </ul>
           </div>
           <div>

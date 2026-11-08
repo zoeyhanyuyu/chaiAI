@@ -17,7 +17,7 @@ const workshops = [
     summary: '第一期从每个学习者最痛的地方开始：资料散落各处、想法转瞬即逝、公众号更新靠意志力。现场拆 ima 和 workbuddy 两个 AI 软件，3 小时做出你自己的知识库和日更工作流。',
     outcomes: ['个人 AI 知识库（ima，现场建好）', '公众号自动化工作流（workbuddy，当场跑通一次）', '30 天 AI 进化计划（带走即执行）'],
     who: ['想建个人知识库的内容创作者', '想公众号日更又总断更的写作者', '零基础、想把 AI 用起来的学习者'],
-    link: '/workshop/',
+    link: `${import.meta.env.BASE_URL}workshop/`,
     guide: '/workshop/guide.html',
   },
   {
@@ -34,7 +34,7 @@ const workshops = [
     summary: '第二期拆的就是本站：fork 讲师站源码仓 chaiAI，对 WorkBuddy 说两句话——你的名字、你的介绍换上去，同款网站 3 小时上线。你今天看的站 = 你要拆的站 = 拆完带走的站。新学员也收：第 0 节 20 分钟补齐 ima 与公众号底盘。',
     outcomes: ['你的同款讲师站：fork chaiAI 五步上线（用户名.github.io/chaiAI）', '双出口产线：库 → 网站 + 公众号草稿箱', 'rsi 技能控信息流：发文章 / 改模块 / 日常体检', '30 天库/站/号飞轮计划'],
     who: ['想拥有个人网站但怕折腾的任何人', '想打造个人品牌的专业人士', '自由职业者、顾问、教练', '新学员也收：第 0 节现场补齐底盘'],
-    link: '/workshop/02/',
+    link: `${import.meta.env.BASE_URL}workshop/02/`,
     guide: '/workshop/02/guide.html',
   },
   {
@@ -49,7 +49,7 @@ const workshops = [
     summary: '拆企查查：输入一个名字，自动拉出工商、股权、风险、关联企业全貌——客户靠什么赚钱、这单能不能接、账期稳不稳、背后是谁，让 AI 帮你先读懂再谈合作。做生意的"识人"能力，3 小时装进你的工作流。',
     outcomes: ['一张读懂客户的自动画像', '风险与关联关系速查', '跟进客户情报档案'],
     who: ['接单前想摸清客户底细的自由职业者', '中小企业主', '销售与商务负责人'],
-    link: '/workshop/03/',
+    link: `${import.meta.env.BASE_URL}workshop/03/`,
     guide: '/workshop/03/guide.html',
   },
   {
@@ -64,7 +64,7 @@ const workshops = [
     summary: '拆知识星球：AI 帮你选题、成稿、定时发布，精华帖自动整理成新会员引导包，到期提醒自动跟进续费。把"想起来才更新"的星球，做成一条内容产线。',
     outcomes: ['星球内容半自动产线', '精华沉淀与新人引导包', '续费提醒工作流'],
     who: ['想开星球的知识博主', '已有星球但更新吃力的星主', '做付费社群的运营者'],
-    link: '/workshop/04/',
+    link: `${import.meta.env.BASE_URL}workshop/04/`,
     guide: '/workshop/04/guide.html',
   },
   {
@@ -79,7 +79,7 @@ const workshops = [
     summary: '拆 DeepSeek Harness：模型、工具、流程编排的工程化骨架，参照「自动化文档审核工作台」成品（批次总览/项目卷宗/功能点审核/费用审核/技术评审/知识库六大模块），现场搭出第一条「文档进→要点出」初审流水线。演示数据为合成、不对应真实项目；AI 建议只作初稿，结论由评审人确认；敏感数据不出内网。',
     outcomes: ['一条能跑的文档初审工作流', '一份 AI 初审+人工确认的审核意见书', '一套可复用的审核规则知识库'],
     who: ['天天跟卷宗、合同、报告打交道的评审与审核人员', '财务、审计与合规岗', '想把重复审核交给工作流的中小企业主'],
-    link: '/workshop/05/',
+    link: `${import.meta.env.BASE_URL}workshop/05/`,
     guide: '/workshop/05/guide.html',
   },
   {
@@ -94,7 +94,7 @@ const workshops = [
     summary: '拆手机 AI：语音助手、拍照识别、录音转写统称的「手机 AI」能力，配上 workbuddy 做分类归档——会议录音、名片、白板照片、灵感语音随手收，自动变成纪要、待办和档案。通勤路上语音调档案、口述发周报，一天的杂事路上清零。手机还是那部手机，3 小时后它开始替你干活。',
     outcomes: ['一套「随手收」的采集清单', '一条「拍/录完自动变纪要和待办」的手机工作流', '一份通勤即可完成的每日 AI 清单'],
     who: ['天天开会、跑外勤的项目负责人', '想把碎片时间用起来的销售与顾问', '通勤时间长、想「路上办公」的职场人'],
-    link: '/workshop/06/',
+    link: `${import.meta.env.BASE_URL}workshop/06/`,
     guide: '/workshop/06/guide.html',
   },
   {
@@ -109,7 +109,7 @@ const workshops = [
     summary: '拆 DSA（Daily Stock Analysis）：开源 A 股 AI 分析工作台，输入自选股，个股分析、大盘复盘、异动告警每天自动送到桌——问股 Agent 多轮追问，持仓风险一眼看清。分析结果由 AI 生成，仅供学习研究参考，不构成投资建议。',
     outcomes: ['你的 DSA 自选股清单 + 第一份个股分析报告', '一条大盘复盘/告警规则工作流', '30 天盯盘复盘计划'],
     who: ['每天收盘想快速复盘的上班族股民', '想用 AI 辅助看盘又怕复杂的零基础学习者', '想给自己盯一篮子股票的小散户'],
-    link: '/workshop/07/',
+    link: `${import.meta.env.BASE_URL}workshop/07/`,
     guide: '/workshop/07/guide.html',
   },
   {
@@ -124,7 +124,7 @@ const workshops = [
     summary: '拆通达信 + WorkBuddy 组合：通达信自选股、K 线、F10 你熟悉的方式看盘，WorkBuddy 编排「定时→采集→AI 总结→推送」自动化流——自选股异动盯住，收盘后复盘和次日关注清单自动出。自动化盯盘结果仅供学习研究，不构成投资建议。',
     outcomes: ['你的通达信自选股 + WorkBuddy 盯盘工作流', '一条收盘自动复盘产线', '30 天盯盘复盘计划'],
     who: ['用通达信看盘多年的老股民', '想每天自动收到复盘小结的上班族', '对「软件联动自动化」好奇的动手派'],
-    link: '/workshop/08/',
+    link: `${import.meta.env.BASE_URL}workshop/08/`,
     guide: '/workshop/08/guide.html',
   },
   {
@@ -139,7 +139,7 @@ const workshops = [
     summary: '拆 QuantDinger：开源 AI Trading OS（GitHub 13,000+ stars，Apache-2.0），本地部署一条链走完量化全流程——AI 研究助手帮你把交易想法写成 Python 策略，历史数据回测出报告，再上模拟盘盯监控。课堂只用模拟盘和历史数据，量化结果仅供学习研究，不构成投资建议。',
     outcomes: ['你的 QuantDinger 本地环境 + 第一个 Python 策略', '一份完整回测报告（模拟历史数据）', '30 天量化学习计划'],
     who: ['想把交易想法变成可回测策略的程序员', '对量化感兴趣但不知从哪下手的初学者', '想系统走一遍「研究→策略→回测→模拟」全流程的学习者'],
-    link: '/workshop/09/',
+    link: `${import.meta.env.BASE_URL}workshop/09/`,
     guide: '/workshop/09/guide.html',
   },
 ]

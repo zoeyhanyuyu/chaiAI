@@ -9,7 +9,7 @@ const MODES = {
     full: '联合带场 · 把共拆AI带回你的舵/企业',
     tags: ['培训讲师', 'HR人力', '教练', '管理者', '演讲表达'],
     why: '你有带人/讲课的经验——六场共拆AI课件全部开放，可直接联合主讲，把工作坊带回分舵或企业内训',
-    href: '/workshops',
+    href: `${import.meta.env.BASE_URL}workshops`,
     cta: '看六场课件',
     accent: 'text-amber-400 border-amber-500/30 bg-amber-500/10',
   },
@@ -18,7 +18,7 @@ const MODES = {
     full: '共创你的领域 AI 专家 Skill',
     tags: ['心理咨询', '教练', '财务会计', '法律', '医疗健康', '宝妈亲子'],
     why: '你的领域拆页是稀缺语料——一起把它训练成「XX 领域 AI 专家」技能，成为该领域第一个共拆样本',
-    href: '/skill-fusion',
+    href: `${import.meta.env.BASE_URL}skill-fusion`,
     cta: '看拆专家工坊',
     accent: 'text-violet-400 border-violet-500/30 bg-violet-500/10',
   },
@@ -64,7 +64,7 @@ const DEFAULT_MODE = {
   name: '从一场开始',
   full: '从一场工作坊开始',
   why: '还没从简介里读到你的职业标签——最快的方式：来现场或线上参加一场共拆AI，边拆边定你的合作模式',
-  href: '/workshops',
+  href: `${import.meta.env.BASE_URL}workshops`,
   cta: '看近期场次',
   accent: 'text-[#6e6e73] border-slate-500/30 bg-slate-500/10',
 }
@@ -738,7 +738,7 @@ export default function Chaibuddy() {
                 >
                   <div className={`relative rounded-2xl overflow-hidden mb-6 border ${cat.border} group cursor-pointer`}>
                     <img
-                      src={`/images/hd/category-${cat.id}.png`}
+                      src={`${import.meta.env.BASE_URL}images/hd/category-${cat.id}.png`}
                       alt={cat.title}
                       className="w-full h-48 md:h-56 object-cover group-hover:scale-[1.02] transition-transform duration-700"
                     />
@@ -757,7 +757,7 @@ export default function Chaibuddy() {
                     {group.items.map((item, i) => (
                       <motion.a
                         key={`${item.slug}-${i}`}
-                        href={`/images/skills/${encodeURIComponent(item.slug)}.html`}
+                        href={`${import.meta.env.BASE_URL}images/skills/${encodeURIComponent(item.slug)}.html`}
                         target="_blank"
                         rel="noopener noreferrer"
                         initial={{ opacity: 0, y: 10 }}

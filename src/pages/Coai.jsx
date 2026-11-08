@@ -8,7 +8,7 @@ const PROJECTS = [
     name: '联合带场',
     full: '把共拆AI工作坊带回你的分舵 / 企业',
     project: '六场共拆AI工作坊',
-    href: '/workshops',
+    href: `${import.meta.env.BASE_URL}workshops`,
     cta: '看六场课件',
     accent: 'text-amber-500 border-amber-500/30 bg-amber-500/10',
     bar: 'from-amber-500/20 to-yellow-500/10',
@@ -22,7 +22,7 @@ const PROJECTS = [
     name: '领域 AI 专家',
     full: '共创你的「XX 领域 AI 专家」Skill',
     project: '拆专家工坊',
-    href: '/skill-fusion',
+    href: `${import.meta.env.BASE_URL}skill-fusion`,
     cta: '看拆专家工坊',
     accent: 'text-violet-500 border-violet-500/30 bg-violet-500/10',
     bar: 'from-violet-500/20 to-purple-500/10',
@@ -78,7 +78,7 @@ const PROJECTS = [
     name: '知识视觉化',
     full: '共创看得懂的信息图',
     project: '拆书赏鉴信息图画廊',
-    href: '/chaibuddy#gallery',
+    href: `${import.meta.env.BASE_URL}chaibuddy#gallery`,
     cta: '看信息图画廊',
     accent: 'text-rose-500 border-rose-500/30 bg-rose-500/10',
     bar: 'from-rose-500/20 to-pink-500/10',
@@ -178,7 +178,7 @@ export default function Coai() {
               也可以直接找站长聊。
             </p>
             <div className="flex items-center justify-center gap-3 flex-wrap mt-6">
-              <a href="/chaibuddy" className="px-5 py-2.5 rounded-xl text-sm font-bold bg-[#1d1d1f] text-white hover:bg-[#3a3a3c] transition-colors">去拆搭子找自己 →</a>
+              <a href={`${import.meta.env.BASE_URL}chaibuddy`} className="px-5 py-2.5 rounded-xl text-sm font-bold bg-[#1d1d1f] text-white hover:bg-[#3a3a3c] transition-colors">去拆搭子找自己 →</a>
               <a href={`mailto:${OWNER_MAIL}`} className="px-5 py-2.5 rounded-xl text-sm font-bold glass border border-white/15 text-[#1d1d1f] hover:border-white/30 transition-colors">邮件站长</a>
             </div>
           </div>
